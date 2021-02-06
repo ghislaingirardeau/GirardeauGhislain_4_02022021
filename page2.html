@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
 	<script src="./js/jquery-2.1.0.min.js"></script>
@@ -23,7 +23,6 @@
 </head>
 <body class="page-container">
  
-<!-- bloc-0 -->
 <nav class="navbar row voffset-lg med-width-whitespace">
 	<div class="navbar-header">
 		<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png"
@@ -45,93 +44,82 @@
 		</ul>
 	</div>
 </nav>
-<!-- bloc-0 END -->
 
-
-<!-- bloc-7 -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
+<header class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax">
 	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
-			</div>
+		<div class="col-sm-12">
+			<img src="img/logo.png" class="center-block image-resize-mode" width="100"
+				alt="La chouette agence, agence web paris, création logo paris" />
+			<h1 class="text-center hero-bloc-text tc-white ">
+			Qui sommes nous ?
+			</h1>
+			<p class="mg-md text-center tc-white">
+			La chouette agence est une agence de web design qui aide les entreprises à
+			devenir attractives et visibles sur Internet	
+			</p>
 		</div>
 	</div>
-</div>
-<!-- bloc-7 END -->
+</header>
+
+<form class="bloc bgc-white l-bloc container bloc-lg row col-sm-6" method="post" action="nom du fichier .php" 
+	novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+	<div class="form-group">
+		<label for="name">
+			Nom
+		</label>
+		<input id="name" class="form-control" required />
+	</div>
+	<div class="form-group">
+		<label for="email">
+			Adresse email
+		</label>
+		<input id="email" class="form-control" type="email" required />
+	</div>
+	<div class="form-group">
+		<label for="input_504">
+			Comment nous avez-vous connu ?
+		</label>
+		<input class="form-control" type="email" required id="input_504"/>
+	</div>
+	<div class="form-group">
+		<label for="projet">
+			Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+		</label>
+		<textarea id="message" class="form-control" rows="4" cols="50" required id="projet"></textarea>
+		</div> 
+		<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+			Envoyer
+		</button>
+	</div>	
+</form>
 
 <!-- ScrollToTop Button -->
 <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
-
-<!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center white">
-					La chouette agence - Agence web basée à Lyon.<br>
-				</p>
-				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
+<footer class="bloc bgc-atomic-tangerine d-bloc row">
+	<h4 class="text-center white">
+		Retrouver notre actualité et suiver nous sur les réseaux sociaux<br>
+	</h4>
+	<div class="row row-no-gutters social">
+		<div class="col-sm-3 text-center">
+			<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
 		</div>
+		<div class="col-sm-3 text-center">
+			<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+		</div>
+		<div class="col-sm-3 text-center">
+			<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+		</div>
+		<div class="col-sm-3 text-center">
+			<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+		</div>	
 	</div>
-</div>
-<!-- Footer - bloc-8 END -->
+	<p class="text-center white">
+		contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+	</p>
+</footer>
+
 
     
 
