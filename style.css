@@ -290,6 +290,7 @@ header h1 {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    height: auto;
 }
 
 .navbar-brand {
