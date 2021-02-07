@@ -13,8 +13,26 @@ button {
   outline: none !important;
 }
 
+a {
+  text-decoration: none;
+}
+a:focus,
 a:hover {
+  color: #484848;
   cursor: pointer;
+  border-bottom: 2px solid #484848;
+}
+
+.nav > li > a {
+  font-family: "helvetica";
+  font-weight: 400;
+  color: #575757 !important;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  color: #f9b460 !important;
+  border-bottom: 3px solid #f9b460;
 }
 
 #page-loading-blocs-notifaction {
@@ -48,7 +66,7 @@ a:hover {
 }
 
 .bloc-md {
-  padding: 50px;
+  padding: 20px 50px;
 }
 
 .bloc-sm {
@@ -140,8 +158,6 @@ h1 {
 .nav-invert .navbar .nav {
   float: left;
 }
-
-
 
 @media (min-width: 768px) {
   .site-navigation {
@@ -422,12 +438,6 @@ a[data-lightbox]:hover img {
   background: none;
 }
 
-nav a {
-  font-family: "helvetica";
-  font-weight: 400;
-  color: #575757 !important;
-}
-
 .container {
   max-width: 1000px;
 }
@@ -451,14 +461,16 @@ nav a {
 }
 
 p {
-  font-size: 11px;
+  font-size: 12px;
+}
+header p {
+  font-size: 18px;
 }
 
 .tight-width-whitespace {
   max-width: 600px;
   margin: auto;
 }
-
 
 .cta-hero {
   margin-top: 22px;
@@ -474,10 +486,32 @@ p {
   margin: auto;
   padding: 20px;
 }
-footer h2, span, li, a {
-    color: #ffffff;
+footer,
+li,
+a {
+  color: #ffffff;
+}
+footer{
+  min-height: 200px;
 }
 
+.col-sm-3 > a {
+  margin: 0px 20px;
+}
+
+@media (min-width:768px) {
+  .col-sm-3{
+    width: 400px;
+  }
+}
+.txt-white {
+  color: white;
+  padding-top: 30px;
+  position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
 
 h2 {
   font-size: 27px;
@@ -495,7 +529,6 @@ h3 {
   max-width: 800px;
   margin: auto;
 }
-
 
 h4 {
   color: #333333 !important;
@@ -516,7 +549,7 @@ h4 {
 
 .portfolio-row {
   margin-bottom: 44px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .avatar {
@@ -538,15 +571,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-  background-color: #f3976c;
+  background-color: #f9b460;
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: #f9b460 !important;
 }
 
 .btn-atomic-tangerine {
-  background: #f3976c;
+  background: #f9b460;
   color: #ffffff !important;
 }
 
@@ -564,7 +597,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: #f9b460 !important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -581,11 +614,11 @@ h4 {
 }
 
 .bg-banniere {
-  background-image: url("img/la-chouette-agence-banniere.jpg");
+  background-image: url("img/la-chouette-banniere.jpg");
 }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation.bmp");
+  background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -625,8 +658,13 @@ h4 {
 
 @media (max-width: 991px) {
   .container {
-    width: 100%;
+    width: 80%;
   }
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+
   .b-parallax {
     background-attachment: scroll;
   }
@@ -657,7 +695,7 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  
+
   .b-parallax {
     background-attachment: scroll;
   }
@@ -670,6 +708,7 @@ h4 {
     margin-left: 0;
     margin-right: 0;
   }
+  
   .site-navigation {
     position: inherit;
     transform: none;
@@ -684,8 +723,6 @@ h4 {
     padding-left: 15px;
     width: 100%;
   }
- 
-
 
   .dropdown .dropdown a .caret {
     float: none;
@@ -695,7 +732,7 @@ h4 {
     border-right-color: transparent;
     border-left-color: transparent;
   }
-  
+
   .navbar-collapse {
     padding: 0;
     overflow-x: hidden;
