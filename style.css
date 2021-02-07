@@ -16,12 +16,6 @@ button {
 a {
   text-decoration: none;
 }
-a:focus,
-a:hover {
-  color: #484848;
-  cursor: pointer;
-  border-bottom: 2px solid #484848;
-}
 
 .nav > li > a {
   font-family: "helvetica";
@@ -34,6 +28,27 @@ a:hover {
   color: #f9b460 !important;
   border-bottom: 3px solid #f9b460;
 }
+
+.art-hover > a:focus,
+.art-hover > a:hover {
+  color: #f9b460 !important;
+  border: 3px solid #f9b460;
+}
+
+footer li > a:focus,
+footer li > a:hover {
+  color: #484848;
+  cursor: pointer;
+  border-bottom: 2px solid #484848;
+}
+
+aside a:focus,
+aside a:hover {
+  color: #f9b460;
+  cursor: pointer;
+  border-bottom: 5px solid #f9b460;
+}
+
 
 #page-loading-blocs-notifaction {
   position: fixed;
@@ -233,7 +248,7 @@ nav .caret {
 }
 
 .mg-md {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -541,10 +556,6 @@ h4 {
 
 .white {
   color: #ffffff !important;
-}
-
-.portfolio-thumb {
-  margin-bottom: 24px;
 }
 
 .portfolio-row {
