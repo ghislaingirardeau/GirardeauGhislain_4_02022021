@@ -29,6 +29,10 @@ a {
   border-bottom: 3px solid #F3976C;
 }
 
+.p-size{
+  font-size: 15px;
+}
+
 .art-hover > a:focus,
 .art-hover > a:hover {
   color: #F3976C !important;
