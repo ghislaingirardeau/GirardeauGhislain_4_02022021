@@ -189,6 +189,9 @@ h1 {
 .navbar-toggle:hover {
   background: #F3976C !important;
 }
+.navbar-toggle:focus {
+  background: #F3976C !important;
+}
 
 .navbar-toggle .icon-bar {
   background-color: rgba(0, 0, 0, 0.5);
