@@ -51,10 +51,10 @@ footer li > a:hover {
 }
 
 .pad-left {
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: 280px;
+ 
 }
-@media (max-width: 768px) {
+@media (max-width: 1124px) {
   .pad-left {
     padding-left: 50px;
     padding-right: 50px;
@@ -358,6 +358,7 @@ button {
   bottom: 20px;
   right: 20px;
   opacity: 0;
+  padding:10px 13px;
   z-index: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -544,6 +545,7 @@ footer p {
   margin-top: 20px;
   padding-left: 4px;
   padding-right: 4px;
+  line-height: 40px;
 }
 
 .col-sm-3 > a {
@@ -574,6 +576,9 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   color: #333333 !important;
+}
+.line-height{
+  line-height: 20px;
 }
 
 .med-width-whitespace {
@@ -627,7 +632,7 @@ h4 {
 
 .btn-atomic-tangerine {
   background: #F3976C;
-  color: #ffffff !important;
+  color:#424241 !important;
 }
 
 .btn-atomic-tangerine:hover {
