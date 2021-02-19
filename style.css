@@ -57,14 +57,14 @@ footer li > a:hover {
   }
 }
 
-aside
+footer
 a {
   color: white;
 }
 
 
-aside a:focus,
-aside a:hover {
+footer a:focus,
+footer a:hover {
   color: #F3976C;
   cursor: pointer;
   border-bottom: 5px solid #F3976C;
